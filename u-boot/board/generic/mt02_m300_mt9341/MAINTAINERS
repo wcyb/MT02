@@ -1,0 +1,6 @@
+MT02 M300 MT9341 BOARD
+M:	Wojciech Cybowski <github.com/wcyb>
+S:	Maintained
+F:	board/generic/mt02_m300_mt9341/
+F:	include/configs/mt02_m300_mt9341.h
+F:	configs/mt02_m300_mt9341_defconfig

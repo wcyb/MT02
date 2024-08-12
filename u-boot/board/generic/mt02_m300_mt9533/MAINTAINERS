@@ -1,0 +1,6 @@
+MT02 M300 MT9533 BOARD
+M:	Wojciech Cybowski <github.com/wcyb>
+S:	Maintained
+F:	board/generic/mt02_m300_mt9533/
+F:	include/configs/mt02_m300_mt9533.h
+F:	configs/mt02_m300_mt9533_defconfig

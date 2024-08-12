@@ -1,0 +1,10 @@
+[ -n "$(uci -q get wireless.@wifi-iface[0].ssid)" ] && exit 0
+
+uci set wireless.@wifi-device[0].disabled="0"
+uci set wireless.@wifi-iface[0].disabled="0"
+uci set wireless.@wifi-iface[0].ssid="MT02"
+uci set wireless.@wifi-iface[0].key="mt02m300"
+uci set wireless.@wifi-iface[0].encryption="psk2"
+uci commit wireless
+
+exit 0

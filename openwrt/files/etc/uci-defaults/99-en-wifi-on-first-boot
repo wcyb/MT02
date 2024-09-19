@@ -1,4 +1,4 @@
-[ -n "$(uci -q get wireless.@wifi-iface[0].ssid)" ] && exit 0
+[ "$(uci -q get wireless.@wifi-iface[0].ssid)" = "disable-wifi" ] && exit 0
 
 uci set wireless.@wifi-device[0].disabled="0"
 uci set wireless.@wifi-iface[0].disabled="0"

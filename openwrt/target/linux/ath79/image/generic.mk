@@ -3141,6 +3141,9 @@ define Device/mt02_m300-mt9533
   DEVICE_MODEL := MT02 M300
   DEVICE_VARIANT := MT9533
   IMAGE_SIZE := 16000k
+  LOADER_TYPE := bin
+  KERNEL := kernel-bin | append-dtb | lzma | loader-kernel | uImage none
+  KERNEL_INITRAMFS := kernel-bin | append-dtb | lzma | loader-kernel | uImage none
 endef
 TARGET_DEVICES += mt02_m300-mt9533
 
@@ -3150,5 +3153,8 @@ define Device/mt02_m300-mt9341
   DEVICE_MODEL := MT02 M300
   DEVICE_VARIANT := MT9341
   IMAGE_SIZE := 16000k
+  LOADER_TYPE := bin
+  KERNEL := kernel-bin | append-dtb | lzma | loader-kernel | uImage none
+  KERNEL_INITRAMFS := kernel-bin | append-dtb | lzma | loader-kernel | uImage none
 endef
 TARGET_DEVICES += mt02_m300-mt9341

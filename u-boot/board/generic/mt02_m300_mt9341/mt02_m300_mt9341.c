@@ -63,8 +63,8 @@ int board_early_init_f(void)
 	val |= AR934X_GPIO_FUNC_JTAG_DISABLE;
 	writel(val, regs + AR934X_GPIO_REG_FUNC);
 
-	ar934x_pll_init(500, 400, 200);
-	ar934x_ddr_init(500, 400, 200);
+	ar934x_pll_init(560, 480, 240);
+	ar934x_ddr_init(560, 480, 240);
 	ath79_eth_reset();
 	return 0;
 }

@@ -30,7 +30,7 @@ This repository contains modifications that need to be made to U-Boot and OpenWR
 The modifications currently available were created based on:
 | U-Boot      | OpenWRT     |
 | ----------- | ----------- |
-| 2024.7      | 2023.05.4   |
+| 2024.7      | 23.05.4     |
 
 # Usage
 For simplicity of use, all you need to do is:
@@ -41,5 +41,4 @@ For simplicity of use, all you need to do is:
 # Firmware preparation
 Since what we will create is incompatible with what is pre-installed (and even if it were not, it is better to have clean software), we need to remember to make a copy of the ART partition.
 With a copy of that partition made, just use the *combine_files.sh* script, which will combine U-Boot, its environment settings (optional), ART and OpenWRT at the appropriate offsets to create a file that you just need to load into 16MB Flash memory.
-
-The current version of the modification is partially ready for use. The MT9533 version works correctly, but the MT9341 version currently hangs during the OpenWRT boot process.
+To create this image, use the **initramfs** version of OpenWRT. Once the device is up and running, flash the **sysupgrade** version via either the console or GUI.

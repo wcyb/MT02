@@ -537,7 +537,7 @@ generic,mt02_m300-mt9533)
 	ucidef_set_led_wlan "wlan" "WLAN" "green:wlan" "phy0tpt"
 	;;
 generic,mt02_m300-mt9341)
-	ucidef_set_led_switch "wan" "WAN" "green:wan" "switch0" "0x04"
+	ucidef_set_led_switch "wan" "WAN" "green:wan" "switch0" "0x08"
 	ucidef_set_led_wlan "wlan" "WLAN" "green:wlan" "phy0tpt"
 esac
 

@@ -3144,6 +3144,7 @@ define Device/mt02_m300-mt9533
   LOADER_TYPE := bin
   KERNEL := kernel-bin | append-dtb | lzma | loader-kernel | uImage none
   KERNEL_INITRAMFS := kernel-bin | append-dtb | lzma | loader-kernel | uImage none
+  SUPPORTED_DEVICES := generic,mt02_m300-mt9533
 endef
 TARGET_DEVICES += mt02_m300-mt9533
 
@@ -3156,5 +3157,6 @@ define Device/mt02_m300-mt9341
   LOADER_TYPE := bin
   KERNEL := kernel-bin | append-dtb | lzma | loader-kernel | uImage none
   KERNEL_INITRAMFS := kernel-bin | append-dtb | lzma | loader-kernel | uImage none
+  SUPPORTED_DEVICES := generic,mt02_m300-mt9341
 endef
 TARGET_DEVICES += mt02_m300-mt9341

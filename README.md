@@ -30,7 +30,13 @@ This repository contains modifications that need to be made to U-Boot and OpenWR
 The modifications currently available were created based on:
 | U-Boot      | OpenWRT     |
 | ----------- | ----------- |
-| 2024.7      | 23.05.4     |
+| 2024.07     | 23.05.4     |
+
+# WiFi
+By default, on first boot, a WiFi network named _MT02_ is created, with the password set to _mt02m300_.
+This setting was created to allow easier configuration on first boot.
+If you don't want to use WiFi, just disable it and change the SSID to _disable-wifi_.
+This way, when you update OpenWRT, the initialization script _99-en-wifi-on-first-boot_, will leave the WiFi settings unchanged.
 
 # Usage
 For simplicity of use, all you need to do is:

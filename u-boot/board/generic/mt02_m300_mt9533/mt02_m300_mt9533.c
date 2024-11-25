@@ -3,7 +3,6 @@
  * Copyright (C) 2024 Wojciech Cybowski <github.com/wcyb>
  */
 
-#include <common.h>
 #include <init.h>
 #include <asm/io.h>
 #include <asm/addrspace.h>

@@ -1,0 +1,4 @@
+5f131ee45fef7b2ef6fba9a6e6c1d439d2805b5b1671aa9de4e31e6a87917931 *openwrt-23.05.5-ath79-generic-mt02_m300-mt9341-initramfs-kernel.bin
+c048c41baca9a1f3c5a9c5c32cd701c7b710927a648316e76ad3c98c22d7e425 *openwrt-23.05.5-ath79-generic-mt02_m300-mt9341-squashfs-sysupgrade.bin
+b5f62e6ec3ef970a8ec8e6e37389df8335c3702df759bfd4f6873d9863febcf8 *openwrt-23.05.5-ath79-generic-mt02_m300-mt9341.manifest
+5726fd4bdf66e06c5d7b6a9f5e40e2ba8018ab35c3aee265f1deacda3f291d80 *version.buildinfo

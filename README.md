@@ -30,7 +30,7 @@ This repository contains modifications that need to be made to U-Boot and OpenWR
 The modifications currently available were created based on:
 | U-Boot      | OpenWRT     |
 | ----------- | ----------- |
-| 2024.07     | 23.05.4     |
+| 2024.10     | 23.05.5     |
 
 # WiFi
 By default, on first boot, a WiFi network named _MT02_ is created, with the password set to _mt02m300_.

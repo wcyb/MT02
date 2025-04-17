@@ -41,13 +41,5 @@ dtb-$(CONFIG_TARGET_MT02_M300_MT9533) += generic,mt02_m300_mt9533.dtb
 
 include $(srctree)/scripts/Makefile.dts
 
-targets += $(dtb-y)
-
 # Add any required device tree compiler flags here
 DTC_FLAGS +=
-
-PHONY += dtbs
-dtbs: $(addprefix $(obj)/, $(dtb-y))
-	@:
-
-clean-files := *.dtb

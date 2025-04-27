@@ -31,7 +31,7 @@ With them, you can compile your version from the sources, or use the already com
 The modifications currently available were created based on:
 | U-Boot      | OpenWRT     |
 | ----------- | ----------- |
-| 2025.01     | 24.10.0     |
+| 2025.01     | 24.10.1     |
 
 # WiFi
 By default, on first boot, a WiFi network named _MT02_ is created, with the password set to _mt02m300_.

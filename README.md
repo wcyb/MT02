@@ -11,11 +11,18 @@ Due to its small size, low price and not too bad performance, it can be a good p
 ![MT02](/doc/img/mt02.jpg)
 
 # GPIO
+In both versions of the repeater, the serial interface works with the same parameters: baud 115200 8N1 and 3.3V signal level.
+
+If you are using a USB to UART converter in which the LEDs indicating activity on the RX and TX lines are directly connected to these lines, it is very possible that this converter will not work properly with your repeater.
+To allow such converter to work properly, you need to desolder the mentioned LEDs or the resistors connected to them.
+
 ## MT9533
+Order of UART pins, starting from the left: TX, RX, GND
 
 ![MT9533](/doc/img/mt9533.jpg)
 
 ## MT9341
+Order of UART pins, starting from the left: GND, RX, TX
 
 ![MT9341](/doc/img/mt9341.jpg)
 
@@ -52,6 +59,9 @@ Compare its appearance with the photos available above.
 At this point you should have 2 BIN files.
 One with U-Boot and the other with OpenWRT (**initramfs** version).
 
+_There is an alternative to the process described below, but a better solution is to make a copy of the ART partition._
+_The mentioned alternative can be found after the description of the partition copy process._
+
 Since what we will create is incompatible with what is pre-installed, we need to make a copy of the ART partition.
 To do this, connect to the repeater using a USB-UART converter (baud 115200 8N1, 3.3V signal level) and enter the following commands:
 
@@ -84,6 +94,10 @@ All that's left is to download a copy of the ART partition to our PC. Using a PC
 `scp -O -o HostKeyAlgorithms=ssh-rsa root@192.168.11.1:/tmp/art.bin /home/me/Desktop/`
 
 _192.168.11.1_ is the IP address of the repeater, and _/home/me/Desktop/_ is the path where the art.bin file is to be saved on our PC.
+
+An alternative to obtaining the ART partition from the repeater is to use a script to initialize a blank ART partition.
+The script, along with instructions for use, can be found in the _bin/art_ folder.
+The ART partition created with its help can be used instead of the one obtained from the repeater.
 
 With a copy of the ART partition made, simply use the *combine_files.sh* script, which will combine U-Boot, its environment settings (optional), ART and OpenWRT at the appropriate offsets to create a file that you just need to load into 16MB Flash memory via a programmer.
 To create this image, use the **initramfs** version of OpenWRT. Once the device is up and running, flash the **sysupgrade** version via either the console or GUI.

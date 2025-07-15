@@ -1,6 +1,6 @@
 # How to use
 1. Select a blank ART partition according to your repeater version.
-2. Run the script, giving as arguments the path to the selected blank partition and the base MAC address of the repeater.
+2. Run the *initialize_art.sh* script, giving as arguments the path to the selected blank partition and the base MAC address of the repeater.
 
 As a result, you will get an initialized ART partition, which you can use instead of making a copy of this partition from the repeater.
 

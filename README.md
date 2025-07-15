@@ -22,7 +22,7 @@ Order of UART pins, starting from the left: TX, RX, GND
 ![MT9533](/doc/img/mt9533.jpg)
 
 ## MT9341
-Order of UART pins, starting from the left: GND, RX, TX
+Order of UART pins, starting from the left: GND, TX, RX
 
 ![MT9341](/doc/img/mt9341.jpg)
 
@@ -38,7 +38,7 @@ With them, you can compile your version from the sources, or use the already com
 The modifications currently available were created based on:
 | U-Boot      | OpenWRT     |
 | ----------- | ----------- |
-| 2025.01     | 24.10.1     |
+| 2025.07     | 24.10.2     |
 
 # WiFi
 By default, on first boot, a WiFi network named _MT02_ is created, with the password set to _mt02m300_.

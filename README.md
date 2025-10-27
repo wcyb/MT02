@@ -38,12 +38,12 @@ With them, you can compile your version from the sources, or use the already com
 The modifications currently available were created based on:
 | U-Boot      | OpenWRT     |
 | ----------- | ----------- |
-| 2025.07     | 24.10.2     |
+| 2025.07     | 24.10.4     |
 
 # WiFi
 By default, on first boot, a WiFi network named _MT02_ is created, with the password set to _mt02m300_.
 This setting was created to allow easier configuration on first boot.
-If you don't want to use WiFi, just disable it and change the SSID to _disable-wifi_.
+If you don't want to use WiFi or you have your own WiFi configuration that you don't want to be changed, just disable it and change the SSID to _disable-wifi_ (before OpenWRT 24.10.4) or to _skip-wifi_ (starting from OpenWRT 24.10.4).
 This way, when you update OpenWRT, the initialization script _99-en-wifi-on-first-boot_, will leave the WiFi settings unchanged.
 
 # Firmware preparation

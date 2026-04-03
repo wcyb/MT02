@@ -1836,6 +1836,7 @@ define Device/huawei_ap5030dn
   DEVICE_PACKAGES := ath10k-firmware-qca988x-ct kmod-ath10k-ct
   LOADER_TYPE := bin
   LOADER_FLASH_OFFS := 0x111DC0
+  LZMA_TEXT_START := 0x82800000
   KERNEL_SIZE := 15360k
   IMAGE_SIZE := 30720k
   COMPILE := loader-$(1).bin
@@ -1851,6 +1852,7 @@ define Device/huawei_ap6010dn
   DEVICE_MODEL := AP6010DN
   LOADER_TYPE := bin
   LOADER_FLASH_OFFS := 0x111DC0
+  LZMA_TEXT_START := 0x82800000
   KERNEL_SIZE := 15360k
   IMAGE_SIZE := 30720k
   COMPILE := loader-$(1).bin
@@ -3472,6 +3474,7 @@ define Device/mt02_m300-mt9533
   SOC := qca9533
   DEVICE_MODEL := MT02 M300
   DEVICE_VARIANT := MT9533
+  DEVICE_PACKAGES := -uboot-envtools
   IMAGE_SIZE := 16000k
   LOADER_TYPE := bin
   KERNEL := kernel-bin | append-dtb | lzma | loader-kernel | uImage none
@@ -3485,6 +3488,7 @@ define Device/mt02_m300-mt9341
   SOC := ar9341
   DEVICE_MODEL := MT02 M300
   DEVICE_VARIANT := MT9341
+  DEVICE_PACKAGES := -uboot-envtools
   IMAGE_SIZE := 16000k
   LOADER_TYPE := bin
   KERNEL := kernel-bin | append-dtb | lzma | loader-kernel | uImage none
